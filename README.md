@@ -28,7 +28,7 @@
   *python -m pip install ipykernel
   python -m ipykernel install --user --name tf
 
-  *安装包 bak：
+  * 安装包 bak：
   python -m pip install jieba matplotlib simplejson pandas seaborn
 
   *为了在win10中从cmd中直接进入conda的shell，执行 conda init --all后重启terminal后，
