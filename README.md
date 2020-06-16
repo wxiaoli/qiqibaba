@@ -13,9 +13,10 @@
     用【kill -9 <进程号>】终止进程。  
 
     配置jupyter密码：  
-    > from notebook.auth import passwd  
-    > passwd()  
-
+    >>> from notebook.auth import passwd  
+    >>> passwd()  
+    
+    ==============================================================================
     GPU版本pytorch安装：  
     conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=9.0 -c pytorch  
 
