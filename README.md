@@ -11,7 +11,7 @@
     用&让命令后台运行, 并把标准输出写入jupyter.log中;  
     nohup表示no hang up, 就是不挂起, 于是这个命令执行后即使终端退出, 也不会停止运行。  
     终止进程：  
-    关闭终端重新打开后, 用【jobs】找不到jupyter这个进程了, 用【ps -a】显示进程的pid。  
+    关闭终端重新打开后, 用【jobs】找不到jupyter这个进程了, 用【ps -au | grep jupyter】查看进程pid。  
     用【kill -9 <进程号>】终止进程。  
 
     配置jupyter密码：  
