@@ -1,6 +1,6 @@
 
 ```
-在tensorflow2.1.0-gpu在 from bert import optimization 时报错：
+在tensorflow2.1.0-gpu的环境里 from bert import optimization 时报错：
 --->  87 class AdamWeightDecayOptimizer(tf.train.Optimizer):
 88   """A basic Adam optimizer that includes "correct" L2 weight decay."""   
 AttributeError: module 'tensorflow_core._api.v2.train' has no attribute 'Optimizer'
