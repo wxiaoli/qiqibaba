@@ -1,6 +1,6 @@
-    # 七七八八
+## 七七八八
 
-    1.系统相关
+### 系统相关
     ==============================================================================
     为了在win10中从cmd中直接进入conda的shell，执行 conda init --all后重启terminal后，
     报错： “无法加载文件 C:\Users\Administrator\Documents\WindowsPowerShell\profile.ps1，因为在此系统上禁止运行脚本。” 
@@ -9,13 +9,13 @@
     2. 执行：get-ExecutionPolicy，回复Restricted，表示状态是禁止的
     3. 执行：set-ExecutionPolicy RemoteSigned即可
 
-    2.远程访问相关
+### 远程访问相关
     ==============================================================================
     ssh -N -f -L localhost:8889:localhost:8888 -p port username@mapped_ip  
     localhost:8889 指本地端口   
     localhost:8888指部署jupyter的服务器端口  
 
-    3.python环境配置相关
+### python环境配置相关
     ==============================================================================
     GPU版本pytorch安装：  
     conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=9.0 -c pytorch
@@ -52,7 +52,7 @@
     jupyter contrib nbextension install --user --skip-running-check
     然后开启jupyter服务后在主界面[Nbextensions]选项卡中配置。
 
-    其它
+### 其它
     ==============================================================================
     git命令
     $ git config --global user.name "Your Name"
