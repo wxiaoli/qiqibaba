@@ -1,7 +1,15 @@
-> 目前tf环境中的tensorflow2.1.0-gpu在 from bert import optimization 时报错：  
----> 87 class AdamWeightDecayOptimizer(tf.train.Optimizer):  
-     88   """A basic Adam optimizer that includes "correct" L2 weight decay."""  
+
+> 目前tf环境中的tensorflow2.1.0-gpu在 from bert import optimization 时报错： 
+
+---> 87 class AdamWeightDecayOptimizer(tf.train.Optimizer): 
+
+     88   """A basic Adam optimizer that includes "correct" L2 weight decay."""
+     
 AttributeError: module 'tensorflow_core._api.v2.train' has no attribute 'Optimizer'  
+
 原因: 当前环境中的tensorflow2.1.0-gpu 不支持这种用法  
+
 解决：把 import tensorflow as tf 换成 import tensorflow.compat.v1 as tf  
+
+
 
