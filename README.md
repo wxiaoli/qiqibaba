@@ -64,6 +64,7 @@ pip install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user --skip-running-check
 然后开启jupyter服务后在主界面[Nbextensions]选项卡中配置。
 ```
+[其他奇奇怪怪的问题](https://www.cnblogs.com/wxiaoli/p/13094327.html) 
 
 ## 其它
 ```
