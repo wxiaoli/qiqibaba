@@ -4,7 +4,7 @@
 - [远程访问相关](#远程访问相关)
 - [python环境配置相关](#python环境配置相关)
   - [conda与python环境](#conda与python环境)
-  - [jupyter server配置](#jupyter server配置)
+  - [jupyter server配置](#jupyter-server配置)
 - [其它](#其它)
 ***
 
@@ -43,7 +43,7 @@ python -m ipykernel install --user --name tf
 安装包 bak：
 python -m pip install jieba matplotlib simplejson pandas seaborn
 ```
-### jupyter server配置
+### jupyter-server配置
 [jupyter基本配置](https://www.cnblogs.com/wxiaoli/p/10648251.html)   
 附加：
 ```
