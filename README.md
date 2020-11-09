@@ -78,4 +78,10 @@ $  git config --global --replace-all user.name "Your Name"
 $  git config --global --replace-all user.email "email@example.com" 
 另，git查看命令： 
 $  git config --list 
+https://code.visualstudio.com/docs/editor/github
+ Git: Clone
+git add .  
+git commit -m "v1.0"
+git pull
+git push
 ```
