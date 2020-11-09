@@ -1,11 +1,12 @@
 # 七七八八
 
-- [系统相关](#系统相关)
-- [远程访问相关](#远程访问相关)
-- [python环境配置相关](#python环境配置相关)
-  - [conda与python环境](#conda与python环境)
-  - [jupyter server配置](#jupyter-server配置)
-- [其它](#其它)
+- [七七八八](#七七八八)
+  - [系统相关](#系统相关)
+  - [远程访问相关](#远程访问相关)
+  - [python环境配置相关](#python环境配置相关)
+    - [conda与python环境](#conda与python环境)
+    - [jupyter-server配置](#jupyter-server配置)
+  - [其它](#其它)
 ***
 
 ## 系统相关
@@ -47,6 +48,10 @@ python -m pip install jieba matplotlib simplejson pandas seaborn
 [jupyter基本配置](https://www.cnblogs.com/wxiaoli/p/10648251.html)   
 附加：
 ```
+配置jupyter密码：  
+>>> from notebook.auth import passwd  
+>>> passwd() 
+
 配置jupyter密码：  
 >>> from notebook.auth import passwd  
 >>> passwd() 
