@@ -52,9 +52,6 @@ python -m pip install jieba matplotlib simplejson pandas seaborn
 >>> from notebook.auth import passwd  
 >>> passwd() 
 
-配置jupyter密码：  
->>> from notebook.auth import passwd  
->>> passwd() 
 
 后台运行jupyter: nohup jupyter notebook &  
 解释:   
