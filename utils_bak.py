@@ -5,6 +5,17 @@ cur_dir = os.path.abspath(os.path.dirname('__file__')) #当前目录的绝对路
 join_dir = os.path.join(cur_dir,'some_dir') #拼接目录
 par_dir = os.path.join(cur_dir,os.path.pardir) #取cur_dir的上一级目录
 
+# 判断 python 版本是否是3
+sys.version_info.major == 3
+
+# 耗时
+import time
+timer = time.perf_counter
+
+t1 = timer()
+....
+t2 = timer()
+t2-t1 # 结果以 秒 为单位
 
 # 修改dir_dispose目录下的所有文件的文件名
 dir_dispose= ''
