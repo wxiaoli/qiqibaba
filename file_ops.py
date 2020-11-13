@@ -26,3 +26,32 @@ def read_csv(fname):
     print(data.columns)
     print(data.index)
     return data
+
+def read_multiline_json(filename):
+    json_content=[]
+    with open(filename,'rb') as f:
+        lines = f.readlines()
+        for line in lines:
+            json_content.append(json.loads(line))
+    return json_content 
+
+# 解压缩文件
+import zipfile
+import os
+'''
+    zip_file: 压缩文件，
+    extract_dir： 解压缩目录
+    return: 解压缩后的所有文件路径
+'''
+def extract_zipfile(zip_file, extract_dir):
+    # 解压
+    with zipfile.ZipFile(zip_file,'r') as zz:
+        zz.extractall(extract_dir)
+
+    # 列出解压后的所有文件
+    files = []
+    for dirpath,dirnames,filenames in os.walk(extract_dir): 
+        for filename in filenames:
+            files.append(os.path.join(dirpath,filename))
+    
+    return files
