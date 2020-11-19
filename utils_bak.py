@@ -11,6 +11,12 @@ sys.version_info.major == 3
 # 耗时
 import time
 timer = time.perf_counter
+# 获取系统时间
+import datetime
+dt=datetime.datetime.now()
+print(dt.year,dt.month,dt.day,dt.hour,dt.minute,dt.second) 
+delta = datetime.timedelta(days=1)
+yesterday = dt-delta
 
 t1 = timer()
 ....
