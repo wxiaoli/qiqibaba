@@ -33,7 +33,22 @@ for dirpath,dirnames,filenames in os.walk(dir_dispose):
 # 判断目录是否存在，新建目录
 if not os.path.exists(tmp_dir):
     os.makedirs(tmp_dir)
-    
+
+import string
+words1 = string.ascii_uppercase  # 26个大写英文字母
+print(words1)
+words2 = string.ascii_lowercase  # 26个小写英文字母
+print(words2)
+words3 = string.ascii_letters  # 52个小写和大写英文字母
+print(words3)
+
+# 自动生成size个字符
+import string
+def rand_chars(size):
+    shuffled_ind = np.random.permutation(np.array(range(52)))
+    chars = string.ascii_letters
+    return [chars[shuffled_ind[:size][i]] for i in range(size)]
+
 # 生成随机序列
 _len = 20
 shuffled_indices = np.random.permutation(np.array(range(_len)))
