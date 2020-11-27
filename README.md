@@ -63,6 +63,15 @@ python -m ipykernel install --user --name tf
 
 安装包 bak：
 python -m pip install jieba matplotlib simplejson pandas seaborn
+
+conda安装pytorch加速镜像
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+
+conda config --set show_channel_urls yes
+
+conda install pytorch torchvision torchaudio cpuonly
 ```
 ### jupyter-server配置
 [jupyter基本配置](https://www.cnblogs.com/wxiaoli/p/10648251.html)   
