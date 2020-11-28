@@ -51,8 +51,8 @@
 ```
 
 ### jupyter-server配置
-```
-[jupyter基本配置](https://www.cnblogs.com/wxiaoli/p/10648251.html)   
+[jupyter基本配置](https://www.cnblogs.com/wxiaoli/p/10648251.html) 
+```  
 附加：
 配置jupyter密码：  
 >>> from notebook.auth import passwd  
