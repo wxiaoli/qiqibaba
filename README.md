@@ -1,6 +1,5 @@
 # 七七八八
 
-
 - [七七八八](#七七八八)
   - [系统相关](#系统相关)
   - [python环境配置相关](#python环境配置相关)
@@ -52,9 +51,9 @@
 ```
 
 ### jupyter-server配置
+```
 [jupyter基本配置](https://www.cnblogs.com/wxiaoli/p/10648251.html)   
 附加：
-```
 配置jupyter密码：  
 >>> from notebook.auth import passwd  
 >>> passwd() 
@@ -76,13 +75,13 @@ jupyter contrib nbextension install --user --skip-running-check
 
 ## 其它
 ```
-** MYSQL
+MYSQL
   + 安装包下载： https://dev.mysql.com/downloads/windows/installer/8.0.html
   + vscode做mysql客户端配置：https://blog.csdn.net/Gineyc/article/details/103227874  
 
-**正则表达式**：https://www.liujiangblog.com/course/python/73  
+正则表达式**：https://www.liujiangblog.com/course/python/73  
 
-** 树莓派  
+树莓派  
   usb免驱动声卡 + 麦克风
   查看树莓派型号：cat /proc/device-tree/model
   查看CPU：cat /proc/cpuinfo 
@@ -92,7 +91,7 @@ jupyter contrib nbextension install --user --skip-running-check
   sudo apt-get install sox
   sudo apt-get install sox libsox-fmt-all
 
-**ALSA (Advanced Linux Sound Architecture),是一个完全开放源代码的音频驱动程序集.  
+ALSA (Advanced Linux Sound Architecture),是一个完全开放源代码的音频驱动程序集.  
   arecord -l  
   alsamixer  
   arecord -D plughw:1,0 -f S16_LE -c 1 -r 16000 -t wav q1.wav -d 5  
