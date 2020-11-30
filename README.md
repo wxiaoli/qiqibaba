@@ -116,7 +116,7 @@ git命令
   $  git config --global --replace-all user.email "email@example.com" 
   另，git查看命令： 
   $  git config --list 
-
+  git checkout .  #本地所有的修改，没有提交的，都返回到原来的状态
   Git: Clone
   git add .  
   git commit -m "v1.0"
