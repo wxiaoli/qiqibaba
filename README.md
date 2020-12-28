@@ -61,6 +61,7 @@ conda remove -n env_name --all
 python -m pip install ipykernel  
 python -m ipykernel install --user --name tf
 
+豆瓣pip源： https://pypi.douban.com/simple
 安装包 bak：
 python -m pip install jieba matplotlib simplejson pandas seaborn
 
@@ -95,9 +96,9 @@ pip install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user --skip-running-check
 然后开启jupyter服务后在主界面[Nbextensions]选项卡中配置。
 ```
-[其他奇奇怪怪的问题](https://www.cnblogs.com/wxiaoli/p/13094327.html) 
+[其他奇奇怪怪的问题](https://www.cnblogs.com/wxiaoli/p/13094327.html)  
 
-## 其它
+## 其它 
 ```
 **android studio打开时报错： unable to access android sdk add-on list**
 选下面的setup Proxy选项，然后在后面的界面中间，选“Manual proxy configuration”，再选“Http”，在host name里填 “mirrors.neusoft.edu.cn” ，这是东软的一个镜像站，然后点ok.  
