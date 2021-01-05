@@ -47,22 +47,18 @@
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 
-<<<<<<< HEAD
 豆瓣pip源： https://pypi.douban.com/simple
 安装包 bak：
 python -m pip install jieba matplotlib simplejson pandas seaborn
 
 conda安装pytorch加速镜像
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+  conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 
 conda config --set show_channel_urls yes
 
 conda install pytorch torchvision torchaudio cpuonly
-=======
-  conda install pytorch torchvision torchaudio cpuonly
->>>>>>> 1e1f9289d27db8b71096610d9df56640d3a34fa6
 ```
 
 ### jupyter-server配置
