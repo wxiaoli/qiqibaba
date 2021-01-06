@@ -119,6 +119,9 @@ ALSA (Advanced Linux Sound Architecture),是一个完全开放源代码的音频
   其中S16_LE: signed 16 bits little endian,详见: https://blog.csdn.net/qingkongyeyue/article/details/52829886
   另，音频编码协议介绍： https://blog.csdn.net/dong_mingyi/article/details/41316559?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~all~first_rank_v2~rank_v25-1-41316559.nonecase&utm_term=l16%20%E9%9F%B3%E9%A2%91%E7%BC%96%E7%A0%81%E6%A0%BC%E5%BC%8F 
 
+禁用windows update 服务
+  REG add "HKLM\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc" /v "Start" /t REG_DWORD /d "4" /f
+  
 git命令
   $ git config --global user.name "Your Name"
   $ git config --global user.email "email@example.com"
