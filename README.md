@@ -47,7 +47,7 @@
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 
-豆瓣pip源： https://pypi.douban.com/simple
+pip源： https://pypi.douban.com/simple
 安装包 bak：
 python -m pip install jieba matplotlib simplejson pandas seaborn
 
@@ -76,6 +76,10 @@ nohup表示no hang up, 就是不挂起, 于是这个命令执行后即使终端�
 终止进程：  
 用【ps -ef | grep jupyter】查看进程pid。 
 然后用【kill -9 <进程号>】终止主进程jupyter-notebook关闭jupyter server。   
+
+在python环境中安装jupyter内核：
+　　python -m pip install ipykernel
+　　python -m ipykernel install --user --name  [yourkernelname]
 
 notebook中高亮显示和代码补齐等：
 pip install jupyter_contrib_nbextensions
