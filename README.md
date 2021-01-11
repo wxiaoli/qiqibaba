@@ -11,18 +11,18 @@
 
 **WINDOWS应用**  
 ```
-+ windows后台运行jupyter notebook并重定向禁止其输出信息：
+- windows后台运行jupyter notebook并重定向禁止其输出信息：
     start /b jupyter notebook >nul 2>nul &
-+ 查看端口占用：netstat -ano|findstr "8888"  
+- 查看端口占用：netstat -ano|findstr "8888"  
 ```
 **Linux应用**  
 ```
-+ 查看某一端口的占用情况： lsof -i:端口号
-+ 查看显卡信息：lspci | grep -i vga
-+ 查看cuda版本： cat /usr/local/cuda/version.txt 或 nvcc -v
-+ 显卡应用情况：nvidia-smi 
-+ 启动ssh服务：/etc/init.d/ssh start
-+ 远程端口映射：
+- 查看某一端口的占用情况： lsof -i:端口号
+- 查看显卡信息：lspci | grep -i vga
+- 查看cuda版本： cat /usr/local/cuda/version.txt 或 nvcc -v
+- 显卡应用情况：nvidia-smi 
+- 启动ssh服务：/etc/init.d/ssh start
+- 远程端口映射：
   ssh -N -f -L localhost:8889:localhost:8888 -p port username@mapped_ip  
   localhost:8889 指本地端口   
   localhost:8888指部署jupyter的服务器端口 
@@ -31,18 +31,18 @@
 ## python环境配置相关
 **conda**  
 ```
-+ conda create -n your_env_name python=3.X
-+ conda remove -n env_name --all
-+ conda update -n base -c defaults conda //更新conda版本
+- conda create -n your_env_name python=3.X
+- conda remove -n env_name --all
+- conda update -n base -c defaults conda //更新conda版本
 
-+ conda activate 环境名
-+ conda deactivate 
-+ conda config --show #查看已经安装过的镜像源
-+ conda config --add channels https://mirrors...
-+ conda config --remove channels https://mirrors... 
-+ conda config --set show_channel_urls yes
+- conda activate 环境名
+- conda deactivate 
+- conda config --show #查看已经安装过的镜像源
+- conda config --add channels https://mirrors...
+- conda config --remove channels https://mirrors... 
+- conda config --set show_channel_urls yes
 
-+ conda安装pytorch加速镜像
+- conda安装pytorch加速镜像
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
@@ -91,13 +91,13 @@ jupyter contrib nbextension install --user --skip-running-check
 ## 其它 
 ```
 MYSQL
-  + 安装包下载： https://dev.mysql.com/downloads/windows/installer/8.0.html
-  + vscode做mysql客户端配置：https://blog.csdn.net/Gineyc/article/details/103227874  
+  - 安装包下载： https://dev.mysql.com/downloads/windows/installer/8.0.html
+  - vscode做mysql客户端配置：https://blog.csdn.net/Gineyc/article/details/103227874  
 
 正则表达式**：https://www.liujiangblog.com/course/python/73  
 
 树莓派  
-  usb免驱动声卡 + 麦克风
+  usb免驱动声卡 - 麦克风
   查看树莓派型号：cat /proc/device-tree/model
   查看CPU：cat /proc/cpuinfo 
   Raspberry Pi 3B 麦克风安装： http://www.alsrobot.cn/goods-579.html
