@@ -18,7 +18,8 @@
 **Linux应用**  
 ```
 - 查看某一端口的占用情况： lsof -i:端口号
-- 查看显卡信息：lspci | grep -i vga
+- 查看显卡信息：lspci | grep -i vga（nvidia） 
+- 查看操作系统版本：cat /etc/issue
 - 查看cuda版本： cat /usr/local/cuda/version.txt 或 nvcc -v
 - 显卡应用情况：nvidia-smi 
 - 启动ssh服务：/etc/init.d/ssh start
