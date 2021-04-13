@@ -23,6 +23,8 @@
 - 查看cuda版本： cat /usr/local/cuda/version.txt 或 nvcc -v
 - 显卡应用情况：nvidia-smi 
 - 启动ssh服务：/etc/init.d/ssh start
+- scp -r E:\curforlpr username@<server ip>:path
+- tar -zxvf cars_train.tgz
 - 远程端口映射：
   ssh -N -f -L localhost:8889:localhost:8888 -p port username@mapped_ip  
   localhost:8889 指本地端口   
@@ -65,6 +67,8 @@ conda install pytorch torchvision torchaudio cpuonly
 ### jupyter-server配置
 [jupyter基本配置](https://www.cnblogs.com/wxiaoli/p/10648251.html) 
 ```  
+python -m pip install jupyter -i https://pypi.doubanio.com/simple
+jupyter notebook --generate-config
 附加：
 配置jupyter密码：  
 >>> from notebook.auth import passwd  
@@ -79,7 +83,7 @@ nohup表示no hang up, 就是不挂起, 于是这个命令执行后即使终端�
 然后用【kill -9 <进程号>】终止主进程jupyter-notebook关闭jupyter server。   
 
 在python环境中安装jupyter内核：
-　　python -m pip install ipykernel
+　　python -m pip install ipykernel -i https://pypi.douban.com/simple
 　　python -m ipykernel install --user --name  [yourkernelname]
 
 notebook中高亮显示和代码补齐等：
