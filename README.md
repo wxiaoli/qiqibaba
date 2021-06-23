@@ -9,6 +9,8 @@
 
 ## 系统相关
 
+https://github.com/getfotiaoqiang/download
+
 **WINDOWS应用**  
 ```
 - windows后台运行jupyter notebook并重定向禁止其输出信息：
@@ -21,9 +23,11 @@
 - 查看显卡信息：lspci | grep -i vga（nvidia） 
 - 查看操作系统版本：cat /etc/issue
 - 查看cuda版本： cat /usr/local/cuda/version.txt 或 nvcc -v
+- 查看cudnn版本： cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 - 显卡应用情况：nvidia-smi 
 - 启动ssh服务：/etc/init.d/ssh start
-- scp -r E:\curforlpr username@<server ip>:path
+- scp -r E:\curforlpr username@<server ip>:path //注：是把整个curforlpr文件夹传过去
+- cudann: cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
 - tar -zxvf cars_train.tgz
 - 远程端口映射：
   ssh -N -f -L localhost:8889:localhost:8888 -p port username@mapped_ip  
@@ -39,6 +43,7 @@
 - conda update -n base -c defaults conda //更新conda版本
 
 - conda activate 环境名
+
 - conda deactivate 
 - conda config --show #查看已经安装过的镜像源
 - conda config --add channels https://mirrors...
@@ -50,6 +55,7 @@
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
   conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
 
+python -m pip install torch==1.4.0+cu100 torchvision==0.5.0+cu100 -f https://download.pytorch.org/whl/torch_stable.html
 pip源： https://pypi.douban.com/simple
 安装包 bak：
 python -m pip install jieba matplotlib simplejson pandas seaborn
@@ -86,6 +92,8 @@ nohup表示no hang up, 就是不挂起, 于是这个命令执行后即使终端�
 　　python -m pip install ipykernel -i https://pypi.douban.com/simple
 　　python -m ipykernel install --user --name  [yourkernelname]
 
+jupyter kernelspec list
+jupyter kernelspec remove kernelname
 notebook中高亮显示和代码补齐等：
 pip install jupyter_contrib_nbextensions
 jupyter contrib nbextension install --user --skip-running-check
