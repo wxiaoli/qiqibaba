@@ -9,8 +9,6 @@
 
 ## 系统相关
 
-https://github.com/getfotiaoqiang/download
-
 **WINDOWS应用**  
 ```
 - windows后台运行jupyter notebook并重定向禁止其输出信息：
@@ -32,7 +30,7 @@ https://github.com/getfotiaoqiang/download
 - 远程端口映射：
   ssh -N -f -L localhost:8889:localhost:8888 -p port username@mapped_ip  
   localhost:8889 指本地端口   
-  localhost:8888指部署jupyter的服务器端口 
+  localhost:8888指远程服务器端口 
 ```
 
 ## python环境配置相关
