@@ -154,5 +154,9 @@ git命令
   git pull
   git push
 
-  :https://gitclone.com/github.com/....
+  Error " OpenSSL SSL_read: Connection was reset, errno 10054"
+  >> 解除ssl验证 git config --global http.sslVerify "false"
+
+  clone 速度太慢
+  >> https://gitclone.com/github.com/....
 ```
